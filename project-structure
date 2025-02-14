@@ -1,0 +1,29 @@
+atomic-design/
+├── public/
+│   ├── images/
+│   │   ├── logos/
+│   │   └── icons/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Card.tsx
+│   │   │   └── Input.tsx
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navigation.tsx
+│   │   └── sections/
+│   │       ├── Hero.tsx
+│   │       ├── Features.tsx
+│   │       ├── Testimonials.tsx
+│   │       ├── Stats.tsx
+│   │       └── FAQ.tsx
+│   ├── styles/
+│   │   ├── globals.css
+│   │   └── theme.ts
+│   └── types/
+└── package.json 

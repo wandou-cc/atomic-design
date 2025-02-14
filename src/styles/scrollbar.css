@@ -1,0 +1,30 @@
+/* 隐藏默认滚动条 */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* 隐藏 Webkit 浏览器的滚动条 */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* 如果想要自定义滚动条样式，可以取消上面的隐藏样式，使用下面的样式 */
+/*
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+*/ 
