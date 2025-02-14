@@ -59,6 +59,134 @@ export default function Features() {
           </p>
         </div>
       </div>
+
+      <div className="max-w-6xl mx-auto mt-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-dark-100/50 backdrop-blur-sm p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold mb-4">Workflow Integration</h3>
+            <p className="text-gray-400 mb-8">
+              Seamlessly connect with traditional financial infrastructure and RWA management systems.
+            </p>
+            <div className="flex items-center justify-between">
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 bg-dark-200 rounded-xl flex items-center justify-center p-3 hover:scale-110 transition-transform duration-300 group">
+                  <svg 
+                    viewBox="0 0 24 24" 
+                    className="w-10 h-10 text-primary group-hover:text-primary/80 transition-colors"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    <path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6" />
+                    <path d="M10 9h4M10 12h4" />
+                  </svg>
+                </div>
+                <span className="text-xs text-gray-400">Real Estate</span>
+              </div>
+
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 bg-dark-200 rounded-xl flex items-center justify-center p-3 hover:scale-110 transition-transform duration-300 group">
+                  <svg 
+                    viewBox="0 0 24 24" 
+                    className="w-10 h-10 text-primary group-hover:text-primary/80 transition-colors"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    <path d="M12 3L4 7v10l8 4 8-4V7l-8-4z" />
+                    <path d="M12 7l8-4M12 7v10M12 7L4 3M4 7l8 4M4 7v10l8 4" />
+                    <circle cx="12" cy="7" r="1" fill="currentColor" />
+                    <circle cx="12" cy="17" r="1" fill="currentColor" />
+                    <circle cx="4" cy="7" r="1" fill="currentColor" />
+                    <circle cx="20" cy="7" r="1" fill="currentColor" />
+                  </svg>
+                </div>
+                <span className="text-xs text-gray-400">Blockchain</span>
+              </div>
+
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 bg-dark-200 rounded-xl flex items-center justify-center p-3 hover:scale-110 transition-transform duration-300 group">
+                  <svg 
+                    viewBox="0 0 24 24" 
+                    className="w-10 h-10 text-primary group-hover:text-primary/80 transition-colors"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    <path d="M4 5h16M4 19h16M4 12h16M8 19V5M16 19V5" />
+                    <path d="M12 8v8M9 10v4M15 10v4" strokeLinecap="round" />
+                  </svg>
+                </div>
+                <span className="text-xs text-gray-400">Finance</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-dark-100/50 backdrop-blur-sm p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold mb-4">Real-time Collaboration</h3>
+            <p className="text-gray-400 mb-8">
+              Connect with asset managers, validators, and regulatory compliance teams in real-time.
+            </p>
+            <div className="flex items-center justify-end space-x-[-12px]">
+              <div className="w-12 h-12 rounded-full border-2 border-dark-100 bg-dark-200 overflow-hidden relative hover:z-10 hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                <svg
+                  viewBox="0 0 36 36"
+                  className="w-full h-full text-primary/80"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <circle cx="18" cy="12" r="6" />
+                  <path d="M30 30c0-6.627-5.373-12-12-12s-12 5.373-12 12" />
+                  <path d="M13 11h10M16 15h4" strokeLinecap="round" />
+                </svg>
+              </div>
+
+              <div className="w-12 h-12 rounded-full border-2 border-dark-100 bg-dark-200 overflow-hidden relative hover:z-10 hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                <svg
+                  viewBox="0 0 36 36"
+                  className="w-full h-full text-primary/80"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <circle cx="18" cy="12" r="6" />
+                  <path d="M30 30c0-6.627-5.373-12-12-12s-12 5.373-12 12" />
+                  <path d="M15 12l3-3 3 3M18 9v6" strokeLinecap="round" />
+                </svg>
+              </div>
+
+              <div className="w-12 h-12 rounded-full border-2 border-dark-100 bg-dark-200 overflow-hidden relative hover:z-10 hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                <svg
+                  viewBox="0 0 36 36"
+                  className="w-full h-full text-primary/80"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <circle cx="18" cy="12" r="6" />
+                  <path d="M30 30c0-6.627-5.373-12-12-12s-12 5.373-12 12" />
+                  <path d="M14 12h8M14 9h8M14 15h8" strokeLinecap="round" />
+                </svg>
+              </div>
+
+              <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-primary text-sm font-medium hover:z-10 hover:scale-110 transition-transform duration-300">
+                <svg
+                  viewBox="0 0 36 36"
+                  className="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <circle cx="12" cy="18" r="2" fill="currentColor" />
+                  <circle cx="18" cy="18" r="2" fill="currentColor" />
+                  <circle cx="24" cy="18" r="2" fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   )
 } 
