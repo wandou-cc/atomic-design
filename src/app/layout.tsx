@@ -1,13 +1,17 @@
-import { Inter } from 'next/font/google'
-import Header from '@/components/layout/Header'
 import './globals.css'
 import '@/styles/scrollbar.css'
+import { Inter } from 'next/font/google'
+import Header from '@/components/layout/Header'
+import CookieConsent from '@/components/common/CookieConsent'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap'
+})
 
 export const metadata = {
-  title: 'Atomic Design - Design work, the efficient way',
-  description: 'Innovative design solutions for technology firms',
+  title: 'NSR Protocol - Bridging Traditional Finance with Web3',
+  description: 'New Silk Road Protocol combines Bitcoin-level security with Ethereum-like programmability, enabling seamless integration of real-world assets into the blockchain ecosystem.',
 }
 
 export default function RootLayout({
@@ -20,6 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-black text-gray-100`}>
         <Header />
         {children}
+        <CookieConsent />
       </body>
     </html>
   )

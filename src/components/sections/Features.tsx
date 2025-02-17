@@ -1,10 +1,28 @@
-import Image from 'next/image'
+// import Image from 'next/image'
+import { motion } from 'framer-motion'
+
+const fadeInUp = {
+  initial: { y: 20, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+  transition: { duration: 0.5 }
+}
+
+const staggerChildren = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
 
 export default function Features() {
   return (
     <section id="features" className="py-24 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <motion.div 
+          className="text-center mb-16"
+          variants={fadeInUp}
+        >
           <span className="text-primary mb-2 inline-block">Revolutionary Web3 Infrastructure</span>
           <h2 className="text-[32px] sm:text-[40px] font-bold mb-4 bg-gradient-to-tr from-gray-500 via-gray-300 to-gray-100 bg-clip-text text-transparent">
             The Future of RWA
@@ -12,37 +30,68 @@ export default function Features() {
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
             Introducing NSR (New Silk Road) - A groundbreaking protocol that combines Bitcoin-level security with Ethereum-like programmability
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          <div className="bg-dark-100 p-8 rounded-2xl">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"
+          variants={staggerChildren}
+        >
+          <motion.div
+            className="bg-dark-100 p-8 rounded-2xl"
+            variants={fadeInUp}
+            whileHover={{ 
+              scale: 1.02,
+              boxShadow: "0 10px 30px -15px rgba(204, 255, 0, 0.1)"
+            }}
+          >
             <div className="mb-6">
               <h3 className="text-2xl font-bold mb-4">Hybrid Architecture</h3>
               <p className="text-gray-400 leading-relaxed">
                 Our innovative approach maintains complete decentralization at the token layer while implementing centralized efficiency at the application layer. This unique architecture enables enterprise-grade performance without compromising security.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="bg-dark-100 p-8 rounded-2xl">
+          <motion.div
+            className="bg-dark-100 p-8 rounded-2xl"
+            variants={fadeInUp}
+            whileHover={{ 
+              scale: 1.02,
+              boxShadow: "0 10px 30px -15px rgba(204, 255, 0, 0.1)"
+            }}
+          >
             <div className="mb-6">
               <h3 className="text-2xl font-bold mb-4">Regulatory Compliance</h3>
               <p className="text-gray-400 leading-relaxed">
                 NSR is designed with regulatory frameworks in mind, ensuring seamless integration with existing financial systems while maintaining the benefits of blockchain technology. Our protocol adheres to international compliance standards.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="bg-dark-100 p-8 rounded-2xl">
+          <motion.div
+            className="bg-dark-100 p-8 rounded-2xl"
+            variants={fadeInUp}
+            whileHover={{ 
+              scale: 1.02,
+              boxShadow: "0 10px 30px -15px rgba(204, 255, 0, 0.1)"
+            }}
+          >
             <div className="mb-6">
               <h3 className="text-2xl font-bold mb-4">Proprietary Technology</h3>
               <p className="text-gray-400 leading-relaxed">
                 While our core technology remains confidential due to intellectual property considerations, we are committed to progressive disclosure aligned with our development milestones. This approach ensures both innovation protection and community transparency.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="bg-dark-100 p-8 rounded-2xl relative overflow-hidden group">
+          <motion.div
+            className="bg-dark-100 p-8 rounded-2xl relative overflow-hidden group"
+            variants={fadeInUp}
+            whileHover={{ 
+              scale: 1.02,
+              boxShadow: "0 10px 30px -15px rgba(204, 255, 0, 0.1)"
+            }}
+          >
             <div className="mb-6 relative z-10">
               <h3 className="text-2xl font-bold mb-4">Technical Excellence</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -50,8 +99,8 @@ export default function Features() {
               </p>
             </div>
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <div className="mt-12 text-center">
           <p className="text-gray-400 text-sm">
@@ -62,7 +111,10 @@ export default function Features() {
 
       <div className="max-w-6xl mx-auto mt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-dark-100/50 backdrop-blur-sm p-8 rounded-2xl">
+          <motion.div
+            className="bg-dark-100/50 backdrop-blur-sm p-8 rounded-2xl"
+            variants={fadeInUp}
+          >
             <h3 className="text-2xl font-bold mb-4">Workflow Integration</h3>
             <p className="text-gray-400 mb-8">
               Seamlessly connect with traditional financial infrastructure and RWA management systems.
@@ -120,9 +172,12 @@ export default function Features() {
                 <span className="text-xs text-gray-400">Finance</span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="bg-dark-100/50 backdrop-blur-sm p-8 rounded-2xl">
+          <motion.div
+            className="bg-dark-100/50 backdrop-blur-sm p-8 rounded-2xl"
+            variants={fadeInUp}
+          >
             <h3 className="text-2xl font-bold mb-4">Real-time Collaboration</h3>
             <p className="text-gray-400 mb-8">
               Connect with asset managers, validators, and regulatory compliance teams in real-time.
@@ -184,7 +239,7 @@ export default function Features() {
                 </svg>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

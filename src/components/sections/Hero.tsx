@@ -1,5 +1,5 @@
-import Button from '../common/Button'
-import ChatAnimation from '../common/ChatAnimation'
+import Button from '@/components/common/Button'
+import ChatAnimation from '@/components/sections/ChatAnimation'
 import Image from 'next/image'
 import LogoScroll from './LogoScroll'
 
@@ -80,7 +80,7 @@ export default function Hero() {
                 <div className="relative w-24 h-24 mx-auto lg:mx-0 mb-8 group">
                   <Image
                     src="/home/4.avif"
-                    alt="Atomic Design Logo"
+                    alt="NSR Protocol Logo"
                     width={96}
                     height={96}
                     className="animate-spin-slow hover:pause-animation"
@@ -89,27 +89,38 @@ export default function Hero() {
                 </div>
 
                 <h1 className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px] leading-tight font-bold mb-6 lg:mb-8 bg-gradient-to-tr from-gray-600 via-gray-200 to-white bg-clip-text text-transparent">
-                  Design work,
+                  New Silk Road
                   <br />
                   <span className="text-[30px] sm:text-[40px] md:text-[45px] lg:text-[65px]">
-                    the efficient way
+                    Protocol
                   </span>
                 </h1>
                 <p className="text-gray-400 text-base sm:text-lg lg:text-xl mb-8 lg:mb-12 max-w-xl mx-auto lg:mx-0">
-                  Innovative design solutions for technology firms and emerging businesses weary of the typical aesthetic methodology. Arriving shortly.
+                  A next-generation blockchain infrastructure that bridges TradFi with DeFi through 
+                  advanced RWA tokenization and hybrid security architecture.
                 </p>
+
+                {/* 邮箱订阅部分 */}
                 <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
                   <input
                     type="email"
-                    placeholder="name@email.com"
-                    className="bg-gray-900 px-6 py-3 rounded-lg w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    placeholder="Enter your email for updates"
+                    className="bg-dark-200 px-6 py-3 rounded-lg w-full sm:w-72 focus:outline-none focus:ring-2 focus:ring-primary/50 text-gray-200 placeholder-gray-500"
                   />
-                  <Button className="w-full sm:w-auto">Get notified</Button>
+                  <Button 
+                    className="w-full sm:w-auto bg-primary text-black hover:bg-primary/90 font-medium px-8"
+                  >
+                    Subscribe
+                  </Button>
                 </div>
-                
+
                 {/* 标签 */}
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                  {['Fast delivery', 'Professional team', '24/7 Support'].map((tag) => (
+                  {[
+                    'Hybrid Security', 
+                    'RWA Integration', 
+                    'Cross-chain Interoperability'
+                  ].map((tag) => (
                     <span 
                       key={tag}
                       className="px-4 py-2 rounded-full bg-dark-100 text-gray-400 text-sm"
